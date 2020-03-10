@@ -8,6 +8,33 @@
 	<body>
 		<canvas id="game-canvas"></canvas>
 		
-		<script src="./scripts/main.js" type="module"></canvas>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-database.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+			 https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
+
+		<script>
+		  // Your web app's Firebase configuration
+		  var firebaseConfig = {
+			apiKey: "AIzaSyDKIn3JWVdV6w41qBsEjto-WoVmaT2pPhg",
+			authDomain: "chaddd-chat.firebaseapp.com",
+			databaseURL: "https://chaddd-chat.firebaseio.com",
+			projectId: "chaddd-chat",
+			storageBucket: "chaddd-chat.appspot.com",
+			messagingSenderId: "647200983948",
+			appId: "1:647200983948:web:a699750a08b2e06338a4a9",
+			measurementId: "G-XQL1LC1C1E"
+		  };
+		  // Initialize Firebase
+		  firebase.initializeApp(firebaseConfig);
+		  firebase.analytics();
+		</script>
+		<script src="./scripts/main.js"></script>
+		<script src="./scripts/input.js"></script>
+		<script src="./scripts/database.js"></script>
+		<script src="./scripts/graphics.js"></script>
 	</body>
 </html>
